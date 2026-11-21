@@ -37,7 +37,7 @@
 
 \section*{读前说明}
 \begin{itemize}
-\item \textbf{什么是已验证的。} 档案的正确性由 Lean 内核和 Sutherland 汇总的几个独立检查器保证\,\cite{sutherland}；11 月 21 日，Lean 和 Mathlib 社区发表联合声明（Lean FRO 和 Mathlib Initiative 背书），确认命题和证明都正确\,\cite{leanfro}。本文说“档案证明了”某个命题，指它是档案里一个通过检查的 Lean 定理，数学翻译由我们给出。
+\item \textbf{什么是已验证的。} 档案的正确性由 Lean 内核和 Sutherland 汇总的几个独立检查器保证\,\cite{sutherland}。11 月 21 日，Lean 和 Mathlib 社区发表联合声明（Lean FRO 和 Mathlib Initiative 背书），确认了普通黎曼猜想的命题与证明\,\cite{leanfro}。本文说“档案证明了”某个命题，指它是档案里一个通过检查的 Lean 定理，数学翻译由我们给出。
 \item \textbf{怎么读出来的。} 我们在本地编译了“三个输入推出黎曼猜想”这一段（17{,}279 个文件），从最终定理出发沿证明项统计实际用到的声明，又为整个档案建了源码索引。逐点追踪由几个 AI 模型分头完成，每条结论都要求给出声明名和行号，并由另一家模型对照源码复核。档案位置一栏优先列出编译证明实际用到的版本：档案里同一个结论常有好几个版本，只有其中一个在最终证明的路径上。
 \item \textbf{位置的写法。} “\Lean{SigALe.lean:38}”指文件名和行号，完整路径见附录。档案按 SHA-256 为 \Lean{9631b4f0\ldots c7fc} 的版本，即 Sutherland 检查的版本。
 \item \textbf{作者。} 一位独立作者定方向、做取舍；文字由多个 AI 模型（其中包括 Anthropic 的 Claude）阅读档案后写成并交叉核对。Alpöge 在 Anthropic 工作，本文独立于他和 Anthropic。

@@ -2,7 +2,7 @@
 
 A guide for human readers to the Lean proof of the Riemann hypothesis and of the generalized Riemann hypothesis for Dirichlet *L*-functions, announced by Levent Alpöge on 20 November 2026.
 
-The proof is a Lean 4 archive of 175,187 files and 17.4 million lines, without comments. Several independent checkers have accepted it (see [Sutherland's report](https://math.mit.edu/~drew/grh/)), and on 21 November the Lean and Mathlib communities, with the endorsement of the Lean FRO and the Mathlib Initiative, certified that the statement and the proof are correct ([joint statement](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/)). This repository writes the argument out for mathematicians and ties every statement to the archive.
+The proof is a Lean 4 archive of 175,187 files and 17.4 million lines, without comments. Several independent checkers have accepted it (see [Sutherland's report](https://math.mit.edu/~drew/grh/)), and on 21 November the Lean and Mathlib communities, with the endorsement of the Lean FRO and the Mathlib Initiative, certified the statement and proof of the ordinary Riemann hypothesis ([joint statement](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/)). This repository writes the argument out for mathematicians and ties every statement to the archive.
 
 | | |
 |---|---|
@@ -71,7 +71,7 @@ Text, web page and video (`docs/`, `paper/`, `web/`, `video/`, this README): [CC
 
 ## 中文简介
 
-2026 年 11 月 20 日，Levent Alpöge 公布了和 Claude 一起完成的黎曼猜想与狄利克雷 GRH 的 Lean 证明。证明是一份 Lean 档案，17.5 万个文件、1740 万行，没有注释。几个独立的检查器已经接受了它，11 月 21 日 Lean 和 Mathlib 社区发表联合声明（Lean FRO 和 Mathlib Initiative 背书），确认命题和证明都正确；Sutherland 还把它和另一个独立的形式化项目接在一起，推出了 Robin 不等式（所有 n > 5040）和 Lagarias 不等式（所有 n ≥ 1），这两个命题只讲约数和与调和数，不出现 ζ 函数。本仓库把证明写成数学家能读的文字，每条陈述都对应到档案里的定理和位置：
+2026 年 11 月 20 日，Levent Alpöge 公布了和 Claude 一起完成的黎曼猜想与狄利克雷 GRH 的 Lean 证明。证明是一份 Lean 档案，17.5 万个文件、1740 万行，没有注释。几个独立的检查器已经接受了它，11 月 21 日 Lean 和 Mathlib 社区发表联合声明（Lean FRO 和 Mathlib Initiative 背书），确认了普通黎曼猜想的命题与证明。Sutherland 还把它和另一个独立的形式化项目接在一起，推出了 Robin 不等式（所有 n > 5040）和 Lagarias 不等式（所有 n ≥ 1），这两个命题只讲约数和与调和数，不出现 ζ 函数。本仓库把证明写成数学家能读的文字，每条陈述都对应到档案里的定理和位置：
 
 - `docs/book.pdf`：成文稿（英文，422 页），按证明使用的顺序写出它需要的每条陈述，后面注明证明它的 Lean 声明；为这个证明新做的论证都给出了证明，已发表的结果按档案用到的形式陈述并引用；
 - `docs/reading-guide-zh.pdf`：中文解读版（21 页），六步讲完证明，每一步对应到档案里的定理和位置，附录列出全部引用声明的完整位置；`docs/reading-guide-en.pdf` 是英文版；
