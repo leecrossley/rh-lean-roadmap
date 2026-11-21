@@ -63,6 +63,8 @@ Sutherland's report (page last updated 2026-11-21 12:55 UTC) records the individ
 - Lean and Mathlib communities, joint statement of 21 November 2026: <https://leanprover-community.github.io/blog/posts/riemann-hypothesis/>
 - T. Tao, blog post of 20 November 2026: <https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/>
 
+Crossley applies the integral window criterion from Part I, “Zeros become poles”, to a delayed difference of the character-family observable $g$. Set $a=\log 2$. For $u>2a$ the difference is $-g(u)+3g(u-a)-2g(u-2a)$. Its Laplace multiplier $(1-2^{-s})(2^{1-s}-1)$ has no zeros in $0<\Re s<1$ and is positive on the real interval $(0,1)$. [Lean proof](https://github.com/leecrossley/dirichlet-window-transfer/blob/fa94718cf9d65ee5b143ded4c91dc3873222cfdf/DelayedPole.lean#L176) and [archived result](https://doi.org/10.5281/zenodo.24410863).
+
 ## Licence
 
 Text, web page and video (`docs/`, `paper/`, `web/`, `video/`, this README): [CC BY 4.0](LICENSE). Lean file (`lean/`): [Apache-2.0](lean/LICENSE). These licences cover this repository; the Alpöge archive is separate.
